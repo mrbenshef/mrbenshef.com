@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ben Sheffield</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
+            font-family: 'Comfortaa', cursive;
         }
 
         body {
@@ -17,7 +20,6 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-family: 'Comfortaa', cursive;
             margin: 0;
         }
 
@@ -38,14 +40,7 @@
             border: 2px solid #ffcd22;
         }
 
-        .divider {
-            display: inline-block;
-            height: 2px;
-            background: #ffcd22;
-            width: 150px;
-        }
-
-        #page > ul {
+        ul {
             list-style: none;
             display: flex;
             flex-direction: row;
@@ -53,39 +48,51 @@
             padding: 0;
         }
 
-        ul > li:not(:last-child)::after {
+        ul>li:not(:last-child)::after {
             content: '/';
             color: #e0e2e4;
             margin: 0 10px;
         }
 
         @media (max-width: 500px) {
-            #page > ul {
+            ul {
                 flex-direction: column;
             }
 
-            ul > li {
+            ul>li {
                 margin-bottom: 5px;
             }
-            
-            ul > li:not(:last-child)::after {
+
+            ul>li:not(:last-child)::after {
                 display: none;
             }
         }
     </style>
 
 </head>
+
 <body>
     <div id="page">
         <img src="profile.jpg" alt="Ben Sheffield" />
         <h1>Ben Sheffield</h1>
         <ul>
-            <li><a href="https://www.facebook.com/ben.shef.12">Facebook</a></li>
-            <li><a href="https://twitter.com/mrbenshef">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/ben-sheffield-313a18164/">LinkedIn</a></li>
-            <li><a href="https://github.com/mrbenshef">Github</a></li>
-            <li><a href="https://steamcommunity.com/id/mrbenshef/">Steam</a></li>
+            <li>
+                <a href="https://www.facebook.com/ben.shef.12">Facebook</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/mrbenshef">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ben-sheffield-313a18164/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/mrbenshef">Github</a>
+            </li>
+            <li>
+                <a href="https://steamcommunity.com/id/mrbenshef/">Steam</a>
+            </li>
         </ul>
     </div>
 </body>
+
 </html>
